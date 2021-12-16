@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body, html {
+body, 
+html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
@@ -49,14 +50,6 @@ filter: grayscale(100%);
   color: #000;
 }
 
-.caption span.border {
-  /* for the big hero-image copy */
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  /*letter-spacing: 10px;*/
-}
 
 .pink {
   background-color: rgb(255, 97, 97);
@@ -74,7 +67,11 @@ filter: grayscale(100%);
 
 .copyDiv {
   /*text-align:center;*/
-  padding:50px 80px;
+  /*padding:50px 80px;*/
+  padding-bottom:50px;
+  padding-top:50px;
+  padding-left:50px;
+  padding-right:50px;
 }
 
 h1 {
@@ -143,17 +140,20 @@ p, h4 {
   <!--https:https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm-->
 
 <div class="bgimg living-room">
-  <div class="caption copyDiv" style='background-color:rgba(255,255,255,.7);'>
-      <a href='#philosophy'>the philosophy</a> | <a href='#community'>the community</a> | <a href='#the_space'>the space</a> | <a href='#say_hello'>say hello</a><br>
+
+  <div class="caption copyDiv" style='background-color:rgba(255,255,255,.7);padding-left:0;padding-right:0;'>
+  	<p>
+      <a href='#philosophy'>the philosophy</a> | <a href='#community'>the community</a> | <a href='#the_space'>the space</a> | <a href='#say_hello'>say hello</a></p>
       <h1 style='margin:0;padding:0;'>spirit and substance <br>collective</h1>
-      We desire to live our dreams amongst friends
-<br>
-      <svg style='height:14px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
+      <p>We desire to live our dreams amongst friends</p>
+      <!--
+      <svg style='height:14px;width:50px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
     <g>
         <path d="M174.476 51.261l-74.704 74.193L25.578 50.75c-4.287-4.316-11.566-4.341-15.882-.054s-4.341 11.565-.055 15.882l82.107 82.673c4.287 4.316 11.566 4.341 15.882.055l82.673-82.107c4.316-4.287 4.341-11.566.055-15.882s-11.235-4.342-15.882-.056z"></path>
     </g>
-</svg>
+</svg>-->
   </div>
+
 </div>
 
 <div class='pink copyDiv' id='philosophy'>
