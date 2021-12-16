@@ -18,8 +18,22 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
+/* two media query to disable parallax on Safari */
+@supports ( -webkit-touch-callout : none) {
+	.bgimg {
+	background-attachment:scroll
+	}
+}
+
+@supports not ( -webkit-touch-callout : none) {
+	.bgimg {
+	background-attachment: fixed;
+	}
+}
+
+
 .living-room {
   background-image: url("images/living-room.webp");
   min-height: 100%;
