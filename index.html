@@ -18,6 +18,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /*opacity:0.39;*/
 }
 
 /* two media query to disable parallax on Safari */
@@ -88,8 +89,19 @@ filter: grayscale(100%);
   padding-right:50px;
 }
 
+.copyDiv {
+	text-align:center;
+}
+
+.copyDiv h3, 
+.copyDiv p {
+	max-width:600px;
+	margin: 0 auto !important;
+}
+
+
 h1 {
-  font-family:futura-lt-w01-book, sans-serif;
+  font-family:Futura-LT-W01-Book, sans-serif;
   font-size:41px;
   font-stretch:100%;
   font-weight:400;
@@ -107,11 +119,21 @@ h3 {
 
 h4 {
   font-weight:normal;
-  font-size:30px;
+  font-size:36px;
   margin:0;
   padding:0;
 }
 
+p {
+	font-size:16px;
+}
+
+@font-face {
+font-display: block;
+font-family: "Futura-LT-W01-Book";
+src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
+src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/dc423cc1-bf86-415c-bc7d-ad7dde416a34.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34") format("svg");
+}
 
 @font-face {
     font-display: block;
@@ -137,11 +159,16 @@ p, h4 {
 
 <div class="bgimg living-room">
 
-  <div class="caption copyDiv" style='background-color:rgba(255,255,255,.7);padding-left:0;padding-right:0;'>
+<!-- de-saturate the top image -->
+<div style='width:100%;height:100%;background-color:rgba(255,255,255,.7);position:absolute;top:0;left:0;'></div>
+
+  <!-- be the top nav thing -->
+  <div class="caption copyDiv" style=';padding-left:0;padding-right:0;'>
   	<p>
       <a href='#philosophy'>the philosophy</a> | <a href='#community'>the community</a> | <a href='#the_space'>the space</a> | <a href='#say_hello'>say hello</a></p>
       <h1 style='margin:0;padding:0;'>spirit and substance <br>collective</h1>
-      <p>We desire to live our dreams amongst friends</p>
+
+      <p style='font-size:28px;font-weight:700;'>We desire to live our dreams amongst friends</p>
       
       <a href='#philosophy'><svg style='height:14px;width:50px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
     <g>
@@ -155,8 +182,9 @@ p, h4 {
 <div class='pink copyDiv' id='philosophy'>
   <h3>the philosophy</h3>
   <h4>Collectively seeking understanding</h4>
+  <p>&nbsp;</p>
   <p>Spirit and Substance is a group of people who believe that we all could use more understanding of the world and of each other. We seek to find this by working on projects to help build understanding of various kinds and by discovering how to live and work and enjoy life with one another.</p>
-
+  <p>&nbsp;</p>
   <p>We are in the formation phase and are looking for others who share our desire to live true to ourselves and who wish to live rich and joyful lives together with passionate and unique people. </p>
 </div>
 
@@ -170,9 +198,9 @@ p, h4 {
     <h3>the community</h3>
 
     <p>Our community is comprised of two parts: the house and the extended community. The house is a space for co-creation, our shared hub. We share meals, cook, laugh, and build the future we want to see. The extended community will include our friends and those who share our vision; they'll gather periodically at the house for thought-provoking events.</p>
-
+<p>&nbsp;</p>
     <p>Our founding members (Larry + Steven) have both lived alone but ultimately found it unfulfilling: humans are not meant to live alone, and they independently dreamed of a better future. Spirit and Substance is their way of building a better future, and maybe yours, too!</p>
-
+<p>&nbsp;</p>
     <p>We want you to join and help shape who and what we are!</p>
 
   </div>
@@ -188,7 +216,7 @@ p, h4 {
     <h3>the space</h3>
 
     <p>We have a massive six bedroom, 100-year-old house in the Berkeley Hills with views of San Francisco and the Bay and plenty of space for gathering and creating both indoors and out. </p>
-
+<p>&nbsp;</p>
     <p>Close to both nature and the city, we are only a 10 minute walk from the beautiful Tamalpais and Indian Rock parks, and less than a 30 minute walk to UC Berkeley and BART.</p>
 
   </div>
