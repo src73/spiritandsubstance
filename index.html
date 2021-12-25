@@ -2,7 +2,39 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME | Sprit and Substance</title>
+    <meta name="description" content="A collective of people who desire to live our dreams amongst friends" />	
 <style>
+
+/* 
+------------------------------
+some boring font things 
+------------------------------
+*/ 
+@font-face {
+font-display: block;
+font-family: "Futura-LT-W01-Book";
+src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
+src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/dc423cc1-bf86-415c-bc7d-ad7dde416a34.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34") format("svg");
+}
+
+@font-face {
+    font-display: block;
+    font-family:"Futura-LT-W01-Light";
+    src:url("futura-lt-w1-light.eot");
+    src:url("futura-lt-w1-light.eot") format("eot"),
+      url("fonts/futura-lt-w1-light.woff2") format("woff2"),
+      url("fonts/futura-lt-w1-light.woff") format("woff"),
+      url("fonts/futura-lt-w1-light.ttf") format("truetype"),
+      url("fonts/futura-lt-w1-light.svg") format("svg");
+}
+
+
+/*
+------------------------------
+the paralax-ish layout and images 
+------------------------------
+*/ 
 body, 
 html {
   height: 100%;
@@ -59,7 +91,7 @@ filter: grayscale(100%);
 .caption {
   position: absolute;
   left: 0;
-  top: 20%;
+  /*top: 20%;*/
   width: 100%;
   text-align: center;
   color: #000;
@@ -100,54 +132,93 @@ filter: grayscale(100%);
 }
 
 
+/*
+------------------------------
+the type 
+------------------------------
+*/ 
+p, h4, body {
+  font-family:Futura-LT-W01-Light, sans-serif;
+}
+
 h1 {
   font-family:Futura-LT-W01-Book, sans-serif;
   font-size:41px;
+  line-height:49.2px;
   font-stretch:100%;
   font-weight:400;
   letter-spacing:2.05px;
-  line-height:49.2px;
 }
 
 h3 {
   font-size: 60px;
+  line-height: 60px;
   font-family:"georgia", serif;
   font-weight:normal;
-  padding-bottom:0px;
+  padding-bottom:30px;
   margin-bottom:0;
 }
 
 h4 {
   font-weight:normal;
   font-size:36px;
+  line-height: 36px;
   margin:0;
   padding:0;
+  padding-bottom: 18px;
 }
 
 p {
 	font-size:16px;
+	padding-bottom:16px;
 }
 
-@font-face {
-font-display: block;
-font-family: "Futura-LT-W01-Book";
-src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
-src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/dc423cc1-bf86-415c-bc7d-ad7dde416a34.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34") format("svg");
+
+
+
+/*
+------------------------------
+the nav
+------------------------------
+*/ 
+.nav, h1 {
+	clear:both;
 }
 
-@font-face {
-    font-display: block;
-    font-family:"Futura-LT-W01-Light";
-    src:url("futura-lt-w1-light.eot");
-    src:url("futura-lt-w1-light.eot") format("eot"),
-      url("fonts/futura-lt-w1-light.woff2") format("woff2"),
-      url("fonts/futura-lt-w1-light.woff") format("woff"),
-      url("fonts/futura-lt-w1-light.ttf") format("truetype"),
-      url("fonts/futura-lt-w1-light.svg") format("svg");
+.nav {
+		margin:0 auto;
+		/*overflow: hidden;*/
+		width:860px;
 }
 
-p, h4 {
-  font-family:Futura-LT-W01-Light, sans-serif;
+.navLink {
+	float:left;
+	width:200px;
+	border-top:1px solid black;
+	/*margin-top:2px;*/
+	margin:5px;
+	text-decoration: none;
+	color:black;
+	padding-top:2px; /* change with :hover border-top */
+}
+
+.navLink:hover {
+	border-top:3px solid black; /* change with padding-top */
+	padding-top:0; 
+}
+
+.navLink a,
+.navLink a:visited
+ {
+	text-decoration: none;
+	color:black;
+	font-size:33px;
+}
+
+.navLink:hover a,
+.navLink:hover a:visited
+ {
+	color:rgb(211, 23, 36);
 }
 
 
@@ -163,14 +234,20 @@ p, h4 {
 <div style='width:100%;height:100%;background-color:rgba(255,255,255,.7);position:absolute;top:0;left:0;'></div>
 
   <!-- be the top nav thing -->
-  <div class="caption copyDiv" style=';padding-left:0;padding-right:0;'>
-  	<p>
-      <a href='#philosophy'>the philosophy</a> | <a href='#community'>the community</a> | <a href='#the_space'>the space</a> | <a href='#say_hello'>say hello</a></p>
-      <h1 style='margin:0;padding:0;'>spirit and substance <br>collective</h1>
+	<div class="caption copyDiv" style='padding-left:0;padding-right:0;'>
 
-      <p style='font-size:28px;font-weight:700;'>We desire to live our dreams amongst friends</p>
+		<div class='nav' style='margin-bottom:50px;'>
+			<div class='navLink'><p><a href='#philosophy'>the philosophy</a> </p></div>
+			<div class='navLink'><p><a href='#community'>the community</a> </p></div>
+			<div class='navLink'><p><a href='#space'>the space</a> </p></div>
+			<div class='navLink'><p><a href='#say_hello'>say hello</a></p></div>
+		</div>
+
+      <h1 style='margin:0;padding:0;padding-top:50px;'>spirit and substance <br>collective</h1>
+
+      <p style='font-size:28px;line-height:28px;padding-top:30px;font-weight:700;'>We desire to live our dreams amongst friends</p>
       
-      <a href='#philosophy'><svg style='height:14px;width:50px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
+      <a href='#philosophy'><svg style='height:14px;width:50px;padding-top:30px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
     <g>
         <path d="M174.476 51.261l-74.704 74.193L25.578 50.75c-4.287-4.316-11.566-4.341-15.882-.054s-4.341 11.565-.055 15.882l82.107 82.673c4.287 4.316 11.566 4.341 15.882.055l82.673-82.107c4.316-4.287 4.341-11.566.055-15.882s-11.235-4.342-15.882-.056z"></path>
     </g>
@@ -180,11 +257,9 @@ p, h4 {
 </div>
 
 <div class='pink copyDiv' id='philosophy'>
-  <h3>the philosophy</h3>
+  <h3 >the philosophy</h3>
   <h4>Collectively seeking understanding</h4>
-  <p>&nbsp;</p>
   <p>Spirit and Substance is a group of people who believe that we all could use more understanding of the world and of each other. We seek to find this by working on projects to help build understanding of various kinds and by discovering how to live and work and enjoy life with one another.</p>
-  <p>&nbsp;</p>
   <p>We are in the formation phase and are looking for others who share our desire to live true to ourselves and who wish to live rich and joyful lives together with passionate and unique people. </p>
 </div>
 
@@ -193,30 +268,27 @@ p, h4 {
   </div>
 </div>
 
-<div style="position:relative;" id='community'>
-  <div class='copyDiv light'>
+<div style="position:relative;" >
+  <div class='copyDiv light' id='community'>
     <h3>the community</h3>
 
     <p>Our community is comprised of two parts: the house and the extended community. The house is a space for co-creation, our shared hub. We share meals, cook, laugh, and build the future we want to see. The extended community will include our friends and those who share our vision; they'll gather periodically at the house for thought-provoking events.</p>
-<p>&nbsp;</p>
     <p>Our founding members (Larry + Steven) have both lived alone but ultimately found it unfulfilling: humans are not meant to live alone, and they independently dreamed of a better future. Spirit and Substance is their way of building a better future, and maybe yours, too!</p>
-<p>&nbsp;</p>
     <p>We want you to join and help shape who and what we are!</p>
 
   </div>
 </div>
 
-<div class="bgimg the-view" id='the_space'>
+<div class="bgimg the-view">
   <div class="caption">
   </div>
 </div>
 
 <div style="position:relative;">
-  <div class='copyDiv gray'>
+  <div class='copyDiv gray' id='space'>
     <h3>the space</h3>
 
     <p>We have a massive six bedroom, 100-year-old house in the Berkeley Hills with views of San Francisco and the Bay and plenty of space for gathering and creating both indoors and out. </p>
-<p>&nbsp;</p>
     <p>Close to both nature and the city, we are only a 10 minute walk from the beautiful Tamalpais and Indian Rock parks, and less than a 30 minute walk to UC Berkeley and BART.</p>
 
   </div>
@@ -227,14 +299,27 @@ p, h4 {
   </div>
 </div>
 
-<div style="position:relative;" id='say_hello'>
-  <div class='copyDiv light'>
+<div style="position:relative;" >
+  <div class='copyDiv light' id='say_hello'>
     <h3>say hello</h3>
 
     <p>Our form goes here</p>
 
   </div>
 </div>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        }).offset(100);
+    });
+});
+
+</script>
 
 </body>
 </html>
