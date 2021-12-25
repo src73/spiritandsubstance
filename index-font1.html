@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HOME | Sprit and Substance</title>
     <meta name="description" content="A collective of people who desire to live our dreams amongst friends" />	
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;600&display=swap" rel="stylesheet">
+
 <style>
 
 /* 
@@ -21,12 +27,7 @@ src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fo
 @font-face {
     font-display: block;
     font-family:"Futura-LT-W01-Light";
-    src:url("futura-lt-w1-light.eot");
-    src:url("futura-lt-w1-light.eot") format("eot"),
-      url("fonts/futura-lt-w1-light.woff2") format("woff2"),
-      url("fonts/futura-lt-w1-light.woff") format("woff"),
-      url("fonts/futura-lt-w1-light.ttf") format("truetype"),
-      url("fonts/futura-lt-w1-light.svg") format("svg");
+	/*src:url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
 }
 
 
@@ -39,9 +40,8 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Futura-LT-W01-Light", sans-serif;
+  font: 300 15px/1.8 "Lato", sans-serif;
   color: #777;
-  background-color:#000; /* change the background color on iOS */ 
 }
 
 .bgimg {
@@ -139,15 +139,15 @@ the type
 ------------------------------
 */ 
 p, h4, body {
-  font-family:Futura-LT-W01-Light, sans-serif;
+  font-family:'Lato', sans-serif;
 }
 
 h1 {
-  font-family:Futura-LT-W01-Book, sans-serif;
+  font-family:'Lato', sans-serif;
   font-size:41px;
   line-height:49.2px;
   font-stretch:100%;
-  font-weight:400;
+  font-weight:900;
   letter-spacing:2.05px;
 }
 
@@ -213,7 +213,7 @@ the nav
  {
 	text-decoration: none;
 	color:black;
-	font-size:33px;
+	font-size:30px;
 }
 
 .navLink:hover a,
@@ -250,10 +250,9 @@ the nav
 }
 
 @media screen and (max-width:450px) {
-  .nav {
-    display:none;
-    
-  }
+	.nav, .navBalance {
+		display:none;
+	}
 }
 
 </style>
@@ -290,7 +289,7 @@ the nav
     </g>
 </svg></a>
 
-<div style='width:100%;height:70px;'><!-- to help balance the nav in the centering --></div>
+<div style='width:100%;height:70px;' class='navBalance'><!-- to help balance the nav in the centering --></div>
   </div>
 
 </div>
@@ -354,13 +353,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
-        })
+        });
     });
 });
-
-
-
-// hd.style = 'padding-top:' + ((window.innerHeight - hd.offsetHeight) / 2)
 
 
 </script>
