@@ -221,6 +221,23 @@ the nav
 	color:rgb(211, 23, 36);
 }
 
+.main-header {
+	margin:0;padding:0;
+}
+
+.nav p {
+	margin:0;padding:0;
+}
+
+.caption {
+	min-height: 370px;
+}
+
+@media screen and (max-width:840px) {
+	.nav {
+		display:none;
+	}
+}
 
 </style>
 </head>
@@ -234,24 +251,29 @@ the nav
 <div style='width:100%;height:100%;background-color:rgba(255,255,255,.7);position:absolute;top:0;left:0;'></div>
 
   <!-- be the top nav thing -->
-	<div class="caption copyDiv" style='padding-left:0;padding-right:0;'>
+	<div class="caption copyDiv" style='padding:0;  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100%;'>
 
-		<div class='nav' style='margin-bottom:50px;'>
+		<div class='nav' style=''>
 			<div class='navLink'><p><a href='#philosophy'>the philosophy</a> </p></div>
 			<div class='navLink'><p><a href='#community'>the community</a> </p></div>
 			<div class='navLink'><p><a href='#space'>the space</a> </p></div>
 			<div class='navLink'><p><a href='#say_hello'>say hello</a></p></div>
 		</div>
 
-      <h1 style='margin:0;padding:0;padding-top:50px;'>spirit and substance <br>collective</h1>
+      <h1 style='' id='main-header'>spirit and substance <br>collective</h1>
 
-      <p style='font-size:28px;line-height:28px;padding-top:30px;font-weight:700;'>We desire to live our dreams amongst friends</p>
+      <p style='font-size:28px;line-height:28px;font-weight:700;'>We desire to live our dreams amongst friends</p>
       
       <a href='#philosophy'><svg style='height:14px;width:50px;padding-top:30px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
     <g>
         <path d="M174.476 51.261l-74.704 74.193L25.578 50.75c-4.287-4.316-11.566-4.341-15.882-.054s-4.341 11.565-.055 15.882l82.107 82.673c4.287 4.316 11.566 4.341 15.882.055l82.673-82.107c4.316-4.287 4.341-11.566.055-15.882s-11.235-4.342-15.882-.056z"></path>
     </g>
 </svg></a>
+
+<div style='width:100%;height:70px;'><!-- to help balance the nav in the centering --></div>
   </div>
 
 </div>
@@ -318,6 +340,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }).offset(100);
     });
 });
+
+// do some layout fixing. 
+var hd = document.getElementById('main-header')
+hd.offsetTop 
+hd.offsetHeight
+window.innerHeight
+
+// hd.style = 'padding-top:' + ((window.innerHeight - hd.offsetHeight) / 2)
+
 
 </script>
 
