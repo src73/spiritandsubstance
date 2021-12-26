@@ -5,7 +5,12 @@
     <title>HOME | Sprit and Substance</title>
     <meta name="description" content="A collective of people who desire to live our dreams amongst friends" />	
 
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 /* 
@@ -23,12 +28,7 @@ src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fo
 @font-face {
     font-display: block;
     font-family:"Futura-LT-W01-Light";
-    src:url("futura-lt-w1-light.eot");
-    src:url("futura-lt-w1-light.eot") format("eot"),
-      url("fonts/futura-lt-w1-light.woff2") format("woff2"),
-      url("fonts/futura-lt-w1-light.woff") format("woff"),
-      url("fonts/futura-lt-w1-light.ttf") format("truetype"),
-      url("fonts/futura-lt-w1-light.svg") format("svg");
+	/*src:url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
 }
 
 
@@ -41,9 +41,6 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Futura-LT-W01-Light", sans-serif;
-  color: #777;
-  background-color:#000; /* change the background color on iOS */ 
 }
 
 .bgimg {
@@ -76,7 +73,7 @@ html {
 }
 
 .the-path {
-  background-image: url("images/tam-path.jpeg");
+  background-image: url("images/people-in-sf2.jpg");
   min-height: 400px;
 }
 
@@ -102,7 +99,7 @@ filter: grayscale(100%);
 
 
 .pink {
-  background-color: rgb(255, 97, 97);
+  background-color:rgb(255, 97, 97);
   color:white;
 }
 
@@ -140,14 +137,16 @@ filter: grayscale(100%);
 the type 
 ------------------------------
 */ 
-p, h4, body {
-  font-family:Futura-LT-W01-Light, sans-serif;
+
+p, h4, body, html, h1, h2 {
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
 }
 
 h1 {
   font-family:Futura-LT-W01-Book, sans-serif;
-  font-size:41px;
-  line-height:49.2px;
+  font-size:50px;
+  line-height:60px;
   font-stretch:100%;
   font-weight:400;
   letter-spacing:2.05px;
@@ -163,7 +162,7 @@ h3 {
 }
 
 h4 {
-  font-weight:normal;
+  font-weight:300;
   font-size:36px;
   line-height: 36px;
   margin:0;
@@ -176,6 +175,11 @@ p {
 	padding-bottom:16px;
 }
 
+p.tagline {
+	font-size:28px;
+	line-height:28px;
+	font-weight:300;
+}
 
 
 
@@ -215,7 +219,7 @@ the nav
  {
 	text-decoration: none;
 	color:black;
-	font-size:33px;
+	font-size:28px;
 }
 
 .navLink:hover a,
@@ -247,15 +251,14 @@ the nav
 	}
 
 	.navLink a{
-		font-size:16px;
+		font-size:14px;
 	}
 }
 
 @media screen and (max-width:450px) {
-  .nav {
-    display:none;
-    
-  }
+	.nav, .navBalance {
+		display:none;
+	}
 }
 
 </style>
@@ -284,7 +287,7 @@ the nav
 
       <h1 style='' id='main-header'>spirit and substance <br>collective</h1>
 
-      <p style='font-size:28px;line-height:28px;font-weight:700;'>We desire to live our dreams amongst friends</p>
+      <p class='tagline'>We desire to live our dreams amongst friends</p>
       
       <a href='#philosophy'><svg style='height:14px;width:50px;padding-top:30px;' preserveAspectRatio="xMidYMid meet" data-bbox="6.443 47.497 187.114 105.008" xmlns="http://www.w3.org/2000/svg" viewBox="6.443 47.497 187.114 105.008" role="presentation" aria-hidden="true" aria-labelledby="svgcid--ilf32pa674rf"><title id="svgcid--ilf32pa674rf"></title>
     <g>
@@ -292,7 +295,7 @@ the nav
     </g>
 </svg></a>
 
-<div style='width:100%;height:70px;'><!-- to help balance the nav in the centering --></div>
+<div style='width:100%;height:70px;' class='navBalance'><!-- to help balance the nav in the centering --></div>
   </div>
 
 </div>
@@ -356,13 +359,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
-        })
+        });
     });
 });
-
-
-
-// hd.style = 'padding-top:' + ((window.innerHeight - hd.offsetHeight) / 2)
 
 
 </script>
